@@ -10,7 +10,7 @@
   <h1>Rudy's Blog</h1>
   <p>This page is hosted on GitHub.</p>
 
-  <h2>Wicked Problems</h2>
+  <h3>Wicked Problems</h3>
   <p>I don't know where I got put onto the idea of Wicked Problems, but somehow or another, I found myself on a website, looking at <a href="https://blog.codinghorror.com/development-is-inherently-wicked/">the following blog post</a>.</p>
   <p>Something here captured my attention.</p>
 
@@ -73,8 +73,27 @@
   </p>
 
   <style>
-    h1, h2, p {
+    h1, h3, p {
       font-family: 'Parkinsans', sans-serif; 
+    }
+
+    div:has(> blockquote) {
+      background-color: #ededed;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    
+    blockquote p::before {
+      content: '\201C';
+    }
+    
+    blockquote p::after {
+      content: '\201D';
+    }
+    
+    blockquote + p {
+      text-align: right;
     }
   </style>
   
