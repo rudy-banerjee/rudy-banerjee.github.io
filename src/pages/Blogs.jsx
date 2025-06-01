@@ -4,7 +4,8 @@ import BlogPost from '../components/BlogPost.jsx';
 function Blogs() {
   // List of blog files in order (most recent first)
   const blogFiles = [
-    'blog-1.md'
+    'blog-1.md',
+    'blog-2.md'
   ];
 
   return (
