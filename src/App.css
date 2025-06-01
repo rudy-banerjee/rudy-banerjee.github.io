@@ -110,6 +110,17 @@ blockquote p::after {
   margin-bottom: var(--spacing-unit);
 }
 
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: calc(var(--spacing-unit) * 3);
+}
+
+.blogs-page .blog-post {
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
 @media (max-width: 768px) {
   .App {
     padding: var(--spacing-unit);
@@ -125,5 +136,9 @@ blockquote p::after {
 
   .blog-post {
     padding: var(--spacing-unit);
+  }
+
+  .page-content {
+    padding: calc(var(--spacing-unit) * 2);
   }
 } 
