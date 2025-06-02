@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import MenuBar from './components/MenuBar.jsx'
 import AboutMe from './pages/AboutMe.jsx'
 import Blogs from './pages/Blogs.jsx'
+import BlogPostPage from './pages/BlogPostPage.jsx'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<AboutMe />} />
             <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog/:filename" element={<BlogPostPage />} />
             <Route path="/" element={<Navigate to="/blogs" replace />} />
           </Routes>
         </main>
