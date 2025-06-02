@@ -121,6 +121,60 @@ blockquote p::after {
   margin-bottom: calc(var(--spacing-unit) * 3);
 }
 
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  border-bottom: none;
+}
+
+.blog-card-link:hover {
+  border-bottom: none;
+}
+
+.blog-card {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  padding: calc(var(--spacing-unit) * 2);
+  margin-bottom: calc(var(--spacing-unit) * 2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-color: var(--accent-color);
+}
+
+.blog-card h3 {
+  margin-bottom: calc(var(--spacing-unit) * 0.5);
+  color: var(--accent-color);
+}
+
+.blog-card .date {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-unit);
+}
+
+.blog-card .excerpt {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-unit);
+  line-height: 1.6;
+}
+
+.blog-card .read-more {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.blog-card.loading {
+  opacity: 0.7;
+}
+
 @media (max-width: 768px) {
   .App {
     padding: var(--spacing-unit);

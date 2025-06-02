@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import BlogPost from '../components/BlogPost.jsx';
+import BlogCard from '../components/BlogCard.jsx';
 
 function Blogs() {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -18,7 +18,7 @@ function Blogs() {
   return (
     <div className="blogs-page">
       {blogPosts.map((post, index) => (
-        <BlogPost key={index} blogFile={post.file} />
+        <BlogCard key={index} post={post} />
       ))}
     </div>
   );
